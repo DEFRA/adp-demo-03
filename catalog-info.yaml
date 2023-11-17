@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "adp-demo-03"
+  description: "sss"
+  annotations:
+    github.com/project-slug: defra/adp-demo-03
+spec:
+  type: backend
+  lifecycle: alpha
+  owner: "group:default/adp"
+  system: system:default/fcp-demo-service
+  

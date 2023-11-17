@@ -1,0 +1,7 @@
+{{- include "adp-helm-library.container-config-map" (list . "adp-demo-03.config-map") -}}
+{{- define "adp-demo-03.config-map" -}}
+data:
+  NODE_ENV: {{ quote .Values.environment }}
+  PORT: {{ quote .Values.container.port }}
+  APPINSIGHTS_CLOUDROLE: {{ quote .Values.name }}
+{{- end -}}

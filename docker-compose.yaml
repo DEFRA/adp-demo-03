@@ -1,0 +1,10 @@
+services:
+  adp-demo-03:
+    build:
+      context: .
+      target: production
+    image: adp-demo-03
+    container_name: adp-demo-03
+    environment:
+      APPINSIGHTS_CLOUDROLE: adp-demo-03-local
+      APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
